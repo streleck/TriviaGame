@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animal Kingdom Trivia</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<!-- Question #1	 -->
+	<h1>Animal Kingdom Trivia Game</h1>
+	<div id="question-1" class="question-box">
+
+		<p>You have <span class="clock">30</span> second(s) remaining.</p>
+
+		<h3 id="q1">Which animal attacks it's prey by delivering a punch with greater acceleration than a bullet?</h3>
+		<div class="answer-choices">
+			<div class="form-check">
+			  	<label class="form-check-label">
+			    	<input id="1a" class="form-check-input" type="checkbox" value="">
+			    		<span class="choice">Kangaroo</span>
+			  	</label>
+			</div>
+			<div class="form-check">
+			  	<label class="form-check-label">
+			   		<input id="1b" class="form-check-input" type="checkbox" value="">
+			    		<span class="choice">Mantis Shrimp</span>
+			  	</label>
+			</div>
+			<div class="form-check">
+	  			<label class="form-check-label">
+	    			<input id="1c" class="form-check-input" type="checkbox" value="">
+	    				<span class="choice">Gorilla</span>
+	    		</label>
+	    	</div>
+	    	<div class="form-check">
+	  			<label class="form-check-label">
+	    			<input id="1d" class="form-check-input" type="checkbox" value="">
+	    				<span class="choice">Bullet Beetle</span>
+	    		</label>
+	    	</div>
+    	</div>
+		<button class="submit">Submit Answer(s)</button>
+	</div>
+
+	
+<!-- 	Answer #1 Correct Page -->
+	<div id="correct-1" class="question-box">
+		<h3>You were right!</h3>
+		<div>
+			<img alt="punching mantis shrimp" src="assets/images/mantis_shrimp.gif">
+		</div>
+		<p>Some species of mantis shrimps can punch with an acceleration of up to 10,400 gs!</p>
+	</div>
+
+<!-- 	Answer #1 Wrong Page -->
+	<div id="wrong-1" class="question-box">
+		<h3>Wrong!</h3>
+		<div>
+			<img alt="punching mantis shrimp" src="assets/images/mantis_shrimp.gif">
+		</div>
+		<p>You should know that only the mantis shrimp can punch with an acceleration of up to 10,400 gs!
+	</div>
+
+<!-- Question #2	 -->
+	<div id="question-2" class="question-box">
+
+		<p>You have <span class="clock">30</span> second(s) remaining.</p>
+
+		<h2 id="q2">Which of these animals is believed to have the longest lifespan?</h2>
+		<div class="answer-choices">
+			<div class="form-check">
+			  	<label class="form-check-label">
+			    	<input id="2a" class="form-check-input" type="checkbox" value="">
+			    		<span class="choice">Greenland Shark</span>
+			  	</label>
+			</div>
+			<div class="form-check">
+			  	<label class="form-check-label">
+			   		<input id="2b" class="form-check-input" type="checkbox" value="">
+			    		<span class="choice">Galapagos Tortise</span>
+			  	</label>
+			</div>
+			<div class="form-check">
+	  			<label class="form-check-label">
+	    			<input id="2c" class="form-check-input" type="checkbox" value="">
+	    				<span class="choice">Human<span class="choice">
+	    		</label>
+	    	</div>
+	    	<div class="form-check">
+	  			<label class="form-check-label">
+	    			<input id="2d" class="form-check-input" type="checkbox" value="">
+	    				<span class="choice">Bowhead Whale</span>
+	    		</label>
+	    	</div>
+    	</div>
+		<button class="submit">Submit Answer(s)</button>
+	</div>
+
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
