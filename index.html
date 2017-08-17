@@ -11,96 +11,66 @@
 </head>
 <body>
 
-
-<!-- Question #1	 -->
+<!-- Question Pages -->
+<!-- question page -->
 	<h1>Animal Kingdom Trivia Game</h1>
-	<div id="question-1" class="question-box">
 
-		<p>You have <span class="clock">30</span> second(s) remaining.</p>
+	<div id="question-box" class="content-box">
 
-		<h3 id="q1">Which animal attacks it's prey by delivering a punch with greater acceleration than a bullet?</h3>
-		<div class="answer-choices">
+		<p id="timer">You have <span class="clock">15</span> second(s) remaining.</p>
+
+		<h3 id="question"></h3>
+		<div id="answer-choices">
 			<div class="form-check">
 			  	<label class="form-check-label">
-			    	<input id="1a" class="form-check-input" type="checkbox" value="">
-			    		<span class="choice">Kangaroo</span>
+			    	<input id="answer1" class="form-check-input" type="checkbox" value="">
+			    		<span id="choice1" class="choice"></span>
 			  	</label>
 			</div>
 			<div class="form-check">
 			  	<label class="form-check-label">
-			   		<input id="1b" class="form-check-input" type="checkbox" value="">
-			    		<span class="choice">Mantis Shrimp</span>
+			   		<input id="answer2" class="form-check-input" type="checkbox" value="">
+			    		<span id="choice2" class="choice"></span>
 			  	</label>
 			</div>
 			<div class="form-check">
 	  			<label class="form-check-label">
-	    			<input id="1c" class="form-check-input" type="checkbox" value="">
-	    				<span class="choice">Gorilla</span>
+	    			<input id="answer3" class="form-check-input" type="checkbox" value="">
+	    				<span id="choice3" class="choice"></span>
 	    		</label>
 	    	</div>
 	    	<div class="form-check">
 	  			<label class="form-check-label">
-	    			<input id="1d" class="form-check-input" type="checkbox" value="">
-	    				<span class="choice">Bullet Beetle</span>
+	    			<input id="answer4" class="form-check-input" type="checkbox" value="">
+	    				<span id="choice4" class="choice"></span>
 	    		</label>
 	    	</div>
     	</div>
-		<button class="submit">Submit Answer(s)</button>
+		<button id="submit">Submit Answer(s)</button>
 	</div>
 
-	
-<!-- 	Answer #1 Correct Page -->
-	<div id="correct-1" class="question-box">
-		<h3>You were right!</h3>
-		<div>
-			<img alt="punching mantis shrimp" src="assets/images/mantis_shrimp.gif">
+
+	<!-- Response Page -->
+	<!-- Response Page -->
+	<div id="answer-box" class="content-box">
+		<h2 id="right-wrong"></h2>
+		<div class="pic-box">
 		</div>
-		<p>Some species of mantis shrimps can punch with an acceleration of up to 10,400 gs!</p>
+		<p  id="answer-info"></p>
 	</div>
 
-<!-- 	Answer #1 Wrong Page -->
-	<div id="wrong-1" class="question-box">
-		<h3>Wrong!</h3>
-		<div>
-			<img alt="punching mantis shrimp" src="assets/images/mantis_shrimp.gif">
-		</div>
-		<p>You should know that only the mantis shrimp can punch with an acceleration of up to 10,400 gs!
-	</div>
 
-<!-- Question #2	 -->
-	<div id="question-2" class="question-box">
+	<!-- Results Page -->
+	<!-- Results Page -->
+<div id="results-box" class="content-box">
+	<h2 id="right-wrong">You've Finished the Quiz!</h2>
+	<p>You got <span class="results" id="correct-answers"></span> correct answers out of <span class="results">6</span>.<p/>
+	<div class="pic-box" id="spirit-pic"></div>
+	<p id="spirit">Your spirit animal is: <span id="spirit-animal"></span></p>
+	<button id="restart">Play Again?</button>
+		
+</div>
 
-		<p>You have <span class="clock">30</span> second(s) remaining.</p>
-
-		<h2 id="q2">Which of these animals is believed to have the longest lifespan?</h2>
-		<div class="answer-choices">
-			<div class="form-check">
-			  	<label class="form-check-label">
-			    	<input id="2a" class="form-check-input" type="checkbox" value="">
-			    		<span class="choice">Greenland Shark</span>
-			  	</label>
-			</div>
-			<div class="form-check">
-			  	<label class="form-check-label">
-			   		<input id="2b" class="form-check-input" type="checkbox" value="">
-			    		<span class="choice">Galapagos Tortise</span>
-			  	</label>
-			</div>
-			<div class="form-check">
-	  			<label class="form-check-label">
-	    			<input id="2c" class="form-check-input" type="checkbox" value="">
-	    				<span class="choice">Human<span class="choice">
-	    		</label>
-	    	</div>
-	    	<div class="form-check">
-	  			<label class="form-check-label">
-	    			<input id="2d" class="form-check-input" type="checkbox" value="">
-	    				<span class="choice">Bowhead Whale</span>
-	    		</label>
-	    	</div>
-    	</div>
-		<button class="submit">Submit Answer(s)</button>
-	</div>
 
 
 	<script type="text/javascript" src="assets/javascript/game.js"></script>

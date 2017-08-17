@@ -1,34 +1,43 @@
 body{
 	background-image: url(../images/rainforest3.jpg);
-	/*background-size: cover;*/	
+	overflow: scroll;
 }
 h1{
 	color: #dd6633;
 	margin: 40px; auto;
-	font-size: 40px;
+	font-size: 45px;
 	text-align: center;
 	font-weight: bold;
 	-webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: white;;
    
 }
-.question-box{
+.content-box{
 	background-image: url(../images/tan.jpg);
 	width: 60%;
 	padding: 35px 45px 30px 45px;
 	margin: auto;
 	margin-top: 5%;
+	margin-bottom: 5%;
+	border: 2px outset #F9AC72;
+}
+#question{
+	margin-top: 30px;
 }
 p{
 	text-align: center;
 	font-size: 22px;
 }
-
 h3{
 	text-align: center;
 }
-.answer-choices{
-	width: 50%;
+h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+}
+#answer-choices{
+	width:auto;
 	margin: auto;
 	margin-top: 15px;
 	padding: 15px;
@@ -46,15 +55,59 @@ button{
 	width: 90%;
 	height: 70px;
 }
+.pic-box{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+#answer-info{
+	margin-top: 30px;
+}
 
-#question-1{
-	display: block;
+#mantis-pic{
+	width: auto;
+	height: auto;
 }
-#correct-1{
-	display:none;
-}#wrong-1{
+
+#shark-pic{
+	width: 400px;
+	height: 235px;
+}
+#elephant-pic{
+	width:400px;
+	height: 266px;
+}
+#kangaroo-pic{
+	width:440px;
+	height: 307px;
+}
+#hummingbird-pic{
+	width: 500px;
+	height: 344px;
+}	
+#gecko{
+	width: 500px;
+	height: 333px;
+
+}
+
+img{
+	border:1px solid white;
+}
+#results-box{
 	display:none;
 }
-#question-2{
-	display:none;
+#spirit-pic{
+	margin:auto;
+}
+#spirit{
+	margin-top: 25px;
+}
+#camel{
+	width: 500px;
+	height: 329px;
+}
+#moorish-idol{
+	width: 500px;
+	height: 383px;
 }
